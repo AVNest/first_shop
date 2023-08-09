@@ -1,7 +1,7 @@
-import React, {useContext} from 'react'
-import {observer} from 'mobx-react-lite'
-import {Context} from '../index'
-import { ListGroup } from 'react-bootstrap'
+import React, {useContext} from 'react';
+import {observer} from "mobx-react-lite";
+import {Context} from "../index";
+import ListGroup from "react-bootstrap/ListGroup";
 
 const TypeBar = observer(() => {
     const {device} = useContext(Context)
@@ -16,9 +16,9 @@ const TypeBar = observer(() => {
                 >
                     {type.name}
                 </ListGroup.Item>
-                )}
+            )}
         </ListGroup>
-    )
-})
+    );
+});
 
-export default TypeBar
+export default TypeBar;
